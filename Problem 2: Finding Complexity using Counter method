@@ -1,0 +1,17 @@
+#include <stdio.h> 
+int main() { 
+  int n, count = 0;
+  scanf("%d", &n); 
+  if (n == 1) { 
+    count += 2;  
+  }
+  else { 
+    count++;   
+    for (int i = 1; i <= n; i++) {
+       count += 5;     
+       }
+    count++; 
+    } 
+  printf("%d", count);
+  return 0; 
+}
