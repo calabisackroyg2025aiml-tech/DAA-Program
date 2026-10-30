@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+ int v;
+ int count = 0;
+ scanf("%d", &v);
+ int coins[] = {1000, 500, 100, 50, 20, 10, 5, 2, 1};
+ for (int i = 0; i < 9; i++) {
+ count = count + v / coins[i];
+ v = v % coins[i];
+ }
+ printf("%d", count);
+ return 0;
+}
